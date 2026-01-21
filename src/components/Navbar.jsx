@@ -20,23 +20,22 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-cream/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center gap-3 group">
-            <img 
-                src="https://i.ibb.co/HLfD5wgf/dualite-favicon.png" 
-                alt="Laufrel Logo" 
-                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110" 
-            />
-            <span className="text-2xl font-bold tracking-tighter text-deep-navy">
-                LAUFREL<span className="text-tech-blue">.</span>
-            </span>
+          <img
+            src="/logo.png"
+            alt="Laufrel Logo"
+            className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+          />
+          <span className="text-2xl font-bold tracking-tighter text-deep-navy">
+            LAUFREL<span className="text-tech-blue">.</span>
+          </span>
         </a>
 
         {/* Desktop Nav */}
